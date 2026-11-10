@@ -15,19 +15,11 @@ public class ArrayNilai02_02 {
             System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
         }
 
-        System.out.println("\n--- Hanya yang lulus ---");
+        System.out.println("\n Hanya yang lulus ");
         for (int i = 0; i < nilaiAkhir.length; i++) {
             if (nilaiAkhir[i] > 70) {
                 System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
             }
-        }
-
-        System.out.println("\n--- Versi foreach ---");
-        int no = 1;
-        for (int nilai : nilaiAkhir) {
-            String status = (nilai > 70) ? "LULUS" : "TIDAK LULUS";
-            System.out.println("Mahasiswa ke-" + no + ": " + nilai + " (" + status + ")");
-            no++;
         }
 
         int lulus = 0;
